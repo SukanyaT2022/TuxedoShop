@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body,html{
+
+}
+:root{
+    --darkblue:#154360 ;
+    --darkGreenMixBlue:#117A65;
+}
+a{
+    text-decoration: none;/*so no line one */
+}
+
+
+/*logo size*/
+.navbar-brand{
+    width: 80px;
+    height: 80px;
+}
+.navbar-brand img{
+
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    background-color: white;
+    border-bottom: 1px solid #BDC3C7 ;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/*target a tag navbar chnage colors and put margin*/
+
+.nav-link{
+    color: var(--darkblue);
+    margin: 0px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+/*make hover on a tag*/
+.nav-link:hover{
+    color: var(--darkGreenMixBlue);
+}
+/*below navbar bet nav and big hero*/
+.belowNav{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.lineUp{
+    width: 1px;
+    background-color: var(--darkblue);
+    height: 30px;
+    margin: 0px 20px;
+}
+
+
+/*bighero use for set height*/
+.bighero{
+height: 70vh;
+margin: 0;
+padding: 0;
+
+}
+.bighero img{
+  width: 100%;
+    height: 100%;
+    object-fit: cover;/*make picture not strtch*/
+}
+/*popular product line*/
+.popProductLine h2{
+    text-align: center;
+    font-size: 25px;
+    color: var(--darkblue);
+    
+}
+/*add line bet popular prudvt*/
+.popProductLine h2:before,.popProductLine h2:after {
+background-color: lightgray;
+content: "";
+display: inline-block;
+height: 2px;
+width: 50%;
+position: relative;
+vertical-align: middle;
+
+}
+.popProductLine h2:before{
+    right:20px;
+    margin-left: -50%;
+
+}
+
+.popProductLine h2:after{
+    left:20px;
+    margin-right: -50%;
+    
+}
+
+.popProductLine{
+    margin: 40px 0px;
+}
+
+/* .card is boostrap class-- we already have box for img in boostrap so no need to create empty boxes*/
+.equalSizeBox .card img{
+max-height: 400px;
+min-height: 400px;
+object-fit: cover;
+}
+/*choice of your section*/
+
+.bigBox{
+    display: flex;
+    align-items: cebter;
+    height: auto;
+    margin-top: 50px;
+    border-top: 1px solid lightgray;
+    border-bottom:  1px solid lightgray;
+    padding: 50px 0px 30px 30px;
+    justify-content: space-between;
+    
+  
+}
+.leftsideText{
+    height: 300px ;
+width: 50%;
+padding: 30px 50px 0px 50px;
+text-align: center;
+
+}
+.rightSidePics{
+    height: 300px ;
+    width: 50%;
+  
+
+}
+.rightSidePics img{
+    height: 100% ;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+
+}
+/* personal touch section*/
+/*no need to make box for img coz box already come with boostrap grid*/
+.fixSizeImg img{
+
+height: 400px;
+width:300px ;
+object-fit: cover;
+
+}
+.topbox{
+height: auto;/* height auto help to respinsive*/
+width: 80%;/* do not put 650px make proble in responsive--use % insted*/
+border: 2px solid var(--darkblue);
+text-align: center;
+padding: 20px;
+margin: 50px auto;/*left and right put auto it will perfect center*/
+
+
+}
+/*make appoinment box*/
+.belowBox{
+
+    height: auto;/* height auto help to respinsive*/
+width: 50%;/* do not put 650px make proble in responsive--use % insted*/
+border: 2px solid var(--darkblue);
+text-align: center;
+padding: 20px;
+margin: auto;
+color: var(--darkblue);
+
+}
+/*add hover to make appoinment */
+.belowBox:hover{
+    background-color: lightseagreen;
+}
+
+/*footer*/
+.contactBox a{
+    color: black;
+}
+
+.contactBox h4{
+    margin-bottom: 20px;
+}
+
+/*social media*/
+.fa-brands{
+    font-size: 30px;
+    color: var(--darkblue);
+    margin: 20px 10px;
+}
+
+/* left side footer more detail--target logo*/
+.moreDetail img{
+    width: 150px;
+}
+.moreDetail{
+    padding-left: 50px;
+
+}
+
+
+
+/*target icon phone and email*/
+.fa-solid{
+margin-right: 10px;
+font-size: 20px;
+color: var(--darkblue);
+}
