@@ -220,3 +220,21 @@ margin-right: 10px;
 font-size: 20px;
 color: var(--darkblue);
 }
+
+/*product pages*/
+
+.bigHero-product{
+background-image: url("../image/productPageBighero.jpg");
+height: 400px;
+width: 100%;
+background-size: cover;/*pics too big we put background-size cover to fit the box*/
+background-position: center center;
+
+}
+
+
+.equalSizeBox-product .card img{
+    max-height: 300px;
+    min-height: 350px;
+    object-fit: cover;
+    }
