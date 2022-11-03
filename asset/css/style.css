@@ -1,240 +1,301 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
-body,html{
+body,
+html {
+    overflow-x: hidden;
+}
+:root {
+  --darkblue: #154360;
+  --darkGreenMixBlue: #117a65;
+}
+a {
+  text-decoration: none; /*so no line one */
+}
 
-}
-:root{
-    --darkblue:#154360 ;
-    --darkGreenMixBlue:#117A65;
-}
-a{
-    text-decoration: none;/*so no line one */
-}
 
-
-/*logo size*/
-.navbar-brand{
-    width: 80px;
-    height: 80px;
+/*logo size--control logo*/
+.navbar-brand {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
 }
-.navbar-brand img{
-
-    width: 100%;
-    height: 100%;
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
 }
-.navbar{
-    background-color: white;
-    border-bottom: 1px solid #BDC3C7 ;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #bdc3c7;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 /*target a tag navbar chnage colors and put margin*/
 
-.nav-link{
-    color: var(--darkblue);
-    margin: 0px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    
+/*nav link target only each link*/
+.nav-link {
+  color: var(--darkblue);
+  margin-left: -60px;
+  margin-right: 80px;
+  font-size: 16px;
+  font-weight: bold;
 }
+
 /*make hover on a tag*/
-.nav-link:hover{
-    color: var(--darkGreenMixBlue);
+.nav-link:hover {
+  color: var(--darkGreenMixBlue);
 }
 /*below navbar bet nav and big hero*/
-.belowNav{
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.belowNav {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkblue);
+  color: white;
 }
 
-.lineUp{
-    width: 1px;
-    background-color: var(--darkblue);
-    height: 30px;
-    margin: 0px 20px;
+.lineUp {
+  width: 1px;
+  background-color: white;
+  height: 30px;
+  margin: 0px 20px;
 }
-
 
 /*bighero use for set height*/
-.bighero{
-height: 70vh;
-margin: 0;
-padding: 0;
-
+.bighero {
+  height: 70vh;
+  margin: 0;
+  padding: 0;
 }
-.bighero img{
+.bighero img {
   width: 100%;
-    height: 100%;
-    object-fit: cover;/*make picture not strtch*/
+  height: 100%;
+  object-fit: cover; /*make picture not strtch*/
 }
 /*popular product line*/
-.popProductLine h2{
-    text-align: center;
-    font-size: 25px;
-    color: var(--darkblue);
-    
+.popProductLine h2 {
+  text-align: center;
+  font-size: 25px;
+  color: var(--darkblue);
 }
 /*add line bet popular prudvt*/
-.popProductLine h2:before,.popProductLine h2:after {
-background-color: lightgray;
-content: "";
-display: inline-block;
-height: 2px;
-width: 50%;
-position: relative;
-vertical-align: middle;
-
+.popProductLine h2:before,
+.popProductLine h2:after {
+  background-color: lightgray;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
 }
-.popProductLine h2:before{
-    right:20px;
-    margin-left: -50%;
-
-}
-
-.popProductLine h2:after{
-    left:20px;
-    margin-right: -50%;
-    
+.popProductLine h2:before {
+  right: 20px;
+  margin-left: -50%;
 }
 
-.popProductLine{
-    margin: 40px 0px;
+.popProductLine h2:after {
+  left: 20px;
+  margin-right: -50%;
+}
+
+.popProductLine {
+  margin: 40px 0px;
 }
 
 /* .card is boostrap class-- we already have box for img in boostrap so no need to create empty boxes*/
-.equalSizeBox .card img{
-max-height: 400px;
-min-height: 400px;
-object-fit: cover;
+.equalSizeBox .card img {
+  max-height: 400px;
+  min-height: 400px;
+  object-fit: cover;
 }
 /*choice of your section*/
 
-.bigBox{
-    display: flex;
-    align-items: cebter;
-    height: auto;
-    margin-top: 50px;
-    border-top: 1px solid lightgray;
-    border-bottom:  1px solid lightgray;
-    padding: 50px 0px 30px 30px;
-    justify-content: space-between;
-    
-  
+.bigBox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;/*make it responsive*/
+  height: auto;
+  margin-top: 50px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 50px 0px 30px 30px;
+  justify-content: space-between;
 }
-.leftsideText{
-    height: 300px ;
-width: 50%;
-padding: 30px 50px 0px 50px;
-text-align: center;
-
+.leftsideText {
+  height: 300px;
+  width: 50%;
+  padding: 30px 50px 0px 50px;
+  text-align: center;
 }
-.rightSidePics{
-    height: 300px ;
-    width: 50%;
-  
-
+.rightSidePics {
+  height: 300px;
+  width: 50%;
 }
-.rightSidePics img{
-    height: 100% ;
-    width: 70%;
-    display: block;
-    margin: auto;
-    border-radius: 20px;
-
+.rightSidePics img {
+  height: 100%;
+  width: 70%;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
 }
 /* personal touch section*/
 /*no need to make box for img coz box already come with boostrap grid*/
-.fixSizeImg img{
-
-height: 400px;
-width:300px ;
-object-fit: cover;
-
+.fixSizeImg img {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
 }
-.topbox{
-height: auto;/* height auto help to respinsive*/
-width: 80%;/* do not put 650px make proble in responsive--use % insted*/
-border: 2px solid var(--darkblue);
-text-align: center;
-padding: 20px;
-margin: 50px auto;/*left and right put auto it will perfect center*/
-
-
+.topbox {
+  height: auto; /* height auto help to respinsive*/
+  width: 80%; /* do not put 650px make proble in responsive--use % insted*/
+  border: 2px solid var(--darkblue);
+  text-align: center;
+  padding: 20px;
+  margin: 50px auto; /*left and right put auto it will perfect center*/
 }
 /*make appoinment box*/
-.belowBox{
-
-    height: auto;/* height auto help to respinsive*/
-width: 50%;/* do not put 650px make proble in responsive--use % insted*/
-border: 2px solid var(--darkblue);
-text-align: center;
-padding: 20px;
-margin: auto;
-color: var(--darkblue);
-
+.belowBox {
+  height: auto; /* height auto help to respinsive*/
+  width: 50%; /* do not put 650px make proble in responsive--use % insted*/
+  border: 2px solid var(--darkblue);
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  color: white;
+  background-color: var(--darkblue);
 }
 /*add hover to make appoinment */
-.belowBox:hover{
-    background-color: lightseagreen;
+.belowBox:hover {
+  background-color:  #1167b1;
 }
 
 /*footer*/
-.contactBox a{
-    color: black;
+.contactBox a {
+  color: black;
 }
 
-.contactBox h4{
-    margin-bottom: 20px;
+.contactBox h4 {
+  margin-bottom: 20px;
 }
 
 /*social media*/
-.fa-brands{
-    font-size: 30px;
-    color: var(--darkblue);
-    margin: 20px 10px;
+.fa-brands {
+  font-size: 30px;
+  color: white;
+  margin: 20px 10px;
 }
 
 /* left side footer more detail--target logo*/
-.moreDetail img{
-    width: 150px;
+.moreDetail img {
+  width: 150px;
 }
-.moreDetail{
-    padding-left: 50px;
-
+.moreDetail {
+  padding-left: 50px;
 }
-
-
 
 /*target icon phone and email*/
-.fa-solid{
-margin-right: 10px;
-font-size: 20px;
-color: var(--darkblue);
+.fa-solid {
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
 }
 
 /*product pages*/
 
-.bigHero-product{
-background-image: url("../image/productPageBighero.jpg");
-height: 400px;
-width: 100%;
-background-size: cover;/*pics too big we put background-size cover to fit the box*/
-background-position: center center;
-
+.bigHero-product {
+  background-image: url('../image/productPageBighero.jpg');
+  height: 400px;
+  width: 100%;
+  background-size: cover; /*pics too big we put background-size cover to fit the box*/
+  background-position: center center;
 }
 
+.equalSizeBox-product .card img {
+  max-height: 300px;
+  min-height: 350px;
+  object-fit: cover;
+}
 
-.equalSizeBox-product .card img{
-    max-height: 300px;
-    min-height: 350px;
+footer {
+  background-color: var(--darkblue);
+  color: white;
+}
+footer p {
+  color: white;
+}
+/*media queries ipad air*/
+
+@media screen and (max-width:850px) {
+    .bighero {
+        height: 40vh;
+       
+      }
+      .nav-link {
+  
+        margin-left: 30px;
+        margin-right: 0px;
+       
+      }
+      
+      .fixSizeImg img {
+      display: block;
+      margin: auto;
+      margin-bottom: -60px;
+      }
+
+}
+/*media queries phone*/
+
+@media screen and (max-width:600px) {
+  /* we   remove below nav section the whole thing for phone size*/
+  .belowNav {
+
+    display: none;
+    
+  }
+  
+  .removePicFromPhone{
+    display: none;/*we hide two pictures in big hero*/
+  }
+  .bighero {
+    height: 50vh;
+   
+  }
+
+  .bigBox {
+
+    align-items: center;
+    height: auto;
+ 
+    justify-content: center;
+    flex-direction: column;/*change 2 boes side vby side to up and down box*/
+  }
+  .leftsideText {
+    height: 300px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+  }
+  .rightSidePics {
+    height: 300px;
+    width: 100%;
+    margin-top: -30px;
+    
+  }
+  .rightSidePics img {
+    height: 100%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
     object-fit: cover;
-    }
+  }
+
+}
