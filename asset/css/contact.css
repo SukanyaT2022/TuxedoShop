@@ -1,0 +1,169 @@
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+ width: 40%;
+ height: auto;
+  border: 2px solid #154360;
+  margin: 50px;
+  border-radius: 10px;
+  
+
+}
+
+#top {
+  margin-top: 40px;
+}
+
+
+#here{
+
+  color: #154360;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
+a{
+  text-decoration: none;/*remove underline link*/
+}
+/*main box control pic and text --contact info*/
+.mainBox-contact{
+  height:auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 40px;
+ flex-wrap: wrap;
+
+
+}
+
+.pic-left-contact{
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  
+}
+
+.pic-left-contact img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/*chang icon color*/
+.text .fa-solid{
+  color: #154360;
+
+
+}
+/*change colot a tag*/
+.text a{
+
+  color: #154360;
+}
+a{
+
+ text-decoration: none !important;
+}
+
+
+
+/*testimonial*/
+
+.roundPicTestimonial img{
+  height: 120px;
+  width: 120px;
+  border-radius: 100%!important;
+  display: block;
+  margin: 20px auto;
+
+
+}
+
+.roundPicTestimonial{
+  margin: 20px 20px;
+  height: auto;
+  min-height: 350px;
+  background-color: #f1dac4;
+  
+}
+.BgColor{
+background-color: #f1dac4;
+}
+
+.fa-quote-left{
+  font-size: 30px!important;
+}
+.fa-quote-right{
+  font-size: 30px!important;
+}
+/*contact form*/
+
+.mainBox-contact{
+width: 50%;
+border: 2px lightgray solid;
+
+
+
+}
+
+.controlForm{
+  display: flex;
+  flex-direction: column;
+}
+
+
+  @media screen and (max-width:1100px){
+    
+
+  
+
+  }
+ 
+  @media screen and (max-width:890px) {
+    
+
+    #here{
+
+     margin: 20px 0px;
+    }
+    
+   
+  }
+  
+
+@media screen and (max-width:600px) {
+  .text{
+   width: 90%;
+   height: auto;
+   margin: 0;
+  
+  }
+
+
+  .pic-left-contact{
+  width: 90%;
+  height: 400px;
+  border-radius: 10px; 
+  margin: 0;
+}
+
+.mainBox-contact{
+  width: 90%;
+  margin: 40px auto 20px auto;
+}
+
+form{
+
+  padding-bottom: 12px;
+}
+
+}

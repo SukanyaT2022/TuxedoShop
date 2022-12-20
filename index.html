@@ -13,13 +13,49 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="asset/css/style.css">
 </head>
+<!--style for Dylan social media-noUse-->
+<style>
+  .embed h2 {
+    border: none;
+
+    text-align: center;
+  }
+
+  .as {
+    width: 30%;
+    margin: 15px auto 20px auto;
+  }
+
+  @media screen and (max-width:2020px) {
+    .as {
+      width: 70%;
+
+    }
+
+
+  }
+
+  @media screen and (max-width:980px) {
+    .as {
+      width: 80%;
+    }
+
+
+  }
+</style>
+
+
+
+
+
+
 
 <body>
   <!--start nave bar section-->
   <nav class="navbar navbar-expand-lg sticky-top  ">
     <!--we add sticky-top to make nav bar sticky// we move bg-light which is light grey-->
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="asset/image/tuxedoLogo.png" alt="shellLogo"></a>
+      <a class="navbar-brand" href="index.html"><img src="asset/image/LogoPBH.png" alt="Logo"></a>
       <!--put logo here-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,12 +65,12 @@
         <ul class="navbar-nav m-auto">
           <!--we give m-auto to move all nav to center-->
           <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
+            <a class="nav-link " id="hover" href="index.html">Home</a>
             <!--remove active and area current so we can change color of a tag-->
             <!--we use nav-link is class for a tag in css for change color and put margin and gap bet a tag-->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="product.html">Product</a>
+            <a class="nav-link" href="product.html">Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -54,41 +90,216 @@
   </nav>
   <!--end nav bar here-->
 
-  <div class="belowNav">
-
-    <p>Custom Tuxedos</p>
-    <div class="lineUp">
-
-    </div>
-    <p>
-      Matching Bow Ties & Accessories</p>
-    <div class="lineUp">
-
-    </div>
-    <p>Custom Tailoring</p>
-
-  </div>
 
 
   <!--big hero start here boostrap-->
 
   <div class="">
     <div class="row">
-      <div class="col-lg-4 col-md-4 bighero"><!--md for medium device like ipad air-->
+      <div class="col-lg-4 col-md-4 bighero">
+        <!--md for medium device like ipad air-->
         <!--we put 3 box so we put 4-->
-        <img src="asset/image/bigheroGreysuit.jpg">
+        <img src="asset/image/tuxedoFor-bigHero.png">
       </div>
       <div class="col-lg-4 col-md-4 bighero removePicFromPhone">
-        <img src="asset/image/bigheroMiddlePic2.jpg">
+        <img src="asset/image/redTie.jpg">
       </div>
       <div class="col-lg-4 col-md-4 bighero removePicFromPhone">
-        <img src="asset/image/bigheroStripeSuit.jpg">
+        <img src="asset/image/bighero-customTailor2.png">
       </div>
     </div>
   </div>
   <!--end bighero here-->
 
-  <!--popula product line-->
+
+
+  <!--blueBar-->
+
+  <div class="belowNav">
+
+    <p>Custom Tuxedos</p>
+ 
+    <p>
+      Matching Bow Ties & Accessories</p>
+    
+    <p>Custom Tailoring</p>
+
+  </div>
+
+
+<!--embed Social media what's new-->
+
+<footer style="background-color:lightgrey ;" class="pb-5">
+
+  <div class="container-fluid personalBox sizeBox4Phone">
+    <!--personal box is class control the big box of socialmedia-->
+    <div class="row justify-content-center">
+      <h2 class="text-center mt-5 changeColor">What's new</h2>
+
+
+      <div class="col-lg-3  text-center moreDetail">
+        <!--class moreDetail control the whole box of left side-->
+        <i class="fa-brands fa-facebook facebookColor"></i>
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fm.facebook.com%2Fsommelierofstyle%2F%3Fmibextid%3DLQQJ4d&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
+          width="100%" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+
+      </div>
+      <div class="col-lg-3 text-center moreDetail ">
+        <!--class moreDetail control the whole box of left side-->
+        <i class="fa-brands fa-twitter twitterColor"></i>
+
+        <a class="twitter-timeline" href="https://twitter.com/SommelierStyle?ref_src=twsrc%5Etfw">Tweets by
+          SommelierStyle</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      </div>
+
+      <div class="col-lg-3  text-center moreDetail ">
+        <!--class moreDetail control the whole box of left side-->
+
+        <i class="fa-brands fa-instagram instagramColor"></i>
+        <blockquote class="instagram-media insta-control" data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/p/CNacetNMEuj/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="14"
+          style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+          <div style="padding:16px;"> <a
+              href="https://www.instagram.com/p/CNacetNMEuj/?utm_source=ig_embed&amp;utm_campaign=loading"
+              style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+              target="_blank">
+              <div style=" display: flex; flex-direction: row; align-items: center;">
+                <div
+                  style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                </div>
+                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                  <div
+                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                  </div>
+                  <div
+                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 19% 0;"></div>
+              <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px"
+                  viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                      <g>
+                        <path
+                          d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg></div>
+              <div style="padding-top: 8px;">
+                <div
+                  style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                  View this post on Instagram</div>
+              </div>
+              <div style="padding: 12.5% 0;"></div>
+              <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                <div>
+                  <div
+                    style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                  </div>
+                  <div
+                    style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                  </div>
+                  <div
+                    style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                  </div>
+                </div>
+                <div style="margin-left: 8px;">
+                  <div
+                    style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                  </div>
+                  <div
+                    style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                  </div>
+                </div>
+                <div style="margin-left: auto;">
+                  <div
+                    style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                  </div>
+                  <div
+                    style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                  </div>
+                  <div
+                    style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                  </div>
+                </div>
+              </div>
+              <div
+                style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                <div
+                  style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                </div>
+                <div
+                  style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                </div>
+              </div>
+            </a>
+            <p
+              style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+              <a href="https://www.instagram.com/p/CNacetNMEuj/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                target="_blank">A post shared by Sommelier of Style (@sommelierofstyle)</a>
+            </p>
+          </div>
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+
+      </div>
+
+
+
+      <!--right side contact box-->
+      <!--
+      <div class="col-lg-3 pt-5 text-center">
+        <div class="contactBox">
+          <h4>Contact Us</h4>
+          <a href="mailto: sommelierofstyle@gmail.com">
+            <p> <i class="fa-solid fa-envelope"></i>sommelierofstyle@gmail.com</p>
+          </a>
+          <a href="tel:203-739-9326">
+            <p> <i class="fa-solid fa-phone"></i> 203-739-9326</p>
+          </a>
+          <p>Visit Our Studio</p>
+          <a href="https://goo.gl/maps/hHzy1HTGz4NhPA8j7">
+            <p>Bethel, CT</p>
+          </a>
+
+        </div>
+        
+      </div>
+      -->
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--popular product line-->
   <div class="popProductLine">
 
     <h2>Popular Products</h2>
@@ -96,32 +307,33 @@
   </div>
 
   <!--4cards middle page-->
-  <div class="equalSizeBox px-3"><!--px is padding left and right-->
+  <div class="equalSizeBox px-3">
+    <!--px is padding left and right-->
     <!--this line is  main box-->
     <div class="row row-cols-1 row-cols-lg-4  row-cols-md-2  row-cols-xs-1 text-center g-4">
       <!--lg is laptop has 4 pics per one row/ md is ipad has only 2 pics in one row/ xs for phone has only one pics per one row-->
       <!--this line contro; all small box-->
       <div class="col">
         <div class="card h-100">
-          <img src="asset/image/manTuxedoforRoll1.jpg" class="card-img-top" alt="blue-tuxedo">
+          <img src="asset/image/bow-index-popular.png" class="card-img-top" alt="blue-tuxedo">
           <div class="card-body">
-            <h5 class="card-title">Classic Fit Suit</h5>
+            <h5 class="card-title">Bow Tie</h5>
 
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="asset/image/tuxedoroll2.jpg" class="card-img-top" alt="greyTuxedo">
+          <img src="asset/image/tux-popular-index.png" class="card-img-top" alt="greyTuxedo">
           <div class="card-body">
-            <h5 class="card-title">Slim Fit Suit</h5>
+            <h5 class="card-title">Tuxedo</h5>
 
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="asset/image/bigheroGreenTuxedo.jpg" class="card-img-top" alt="greenTuxedo">
+          <img src="asset/image/Nsuitwhite.png" class="card-img-top" alt="greenTuxedo">
           <div class="card-body">
             <h5 class="card-title">Modern Fit Suit</h5>
 
@@ -130,9 +342,9 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="asset/image/tuxedoroll4.jpg" class="card-img-top" alt="darkgreyTuxedo">
+          <img src="asset/image/indexPopular.png" class="card-img-top" alt="darkgreyTuxedo">
           <div class="card-body">
-            <h5 class="card-title"> Single Breasted Suit</h5>
+            <h5 class="card-title">Tie</h5>
 
           </div>
         </div>
@@ -144,15 +356,14 @@
   <!--the choice of your section-->
   <div class="bigBox">
     <div class="leftsideText">
-      <h2>The Choice of Your</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos amet at dolorum dolorem sed, accusamus modi
-        asperiores eius cumque porro!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos amet at dolorum
-        dolorem sed, accusamus modi asperiores eius cumque </p>
+      <h2 class="text-center">Custom-Made Perfect For You</h2>
+      <p>Sommelier of Style focus on your choice! We offer a large range of suits from Classic fits to Tuxedos. Whatever
+        you are looking for we have it in stock. Our suits vary in color, pattern and size. The choice is yours to make
+        and we will deliver.</p>
     </div>
     <div class="rightSidePics">
       <img src="asset/image/belowRoll.jpg">
     </div>
-
 
   </div>
 
@@ -168,14 +379,15 @@
       </div>
       <div class="col-lg-8 col-md-12 pt-5">
         <div class="topbox">
-          <h4>Add Personal Touch</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Id placeat voluptatibus maxime nobis perferendis debitis modi dicta eligendi cumque quibusdam.</p>
+          <h4 class="text-center">Add a Personal Touch</h4>
+          <p>Who said looking sharp had to be uncomfortable? Here at Sommelier of Style, we focus on comfort and style.
+            So let us help you, dress like you mean it!</p>
 
 
         </div>
-        <a href=""><!--add contact link-->
-          <div class="belowBox">
+        <a href="contact.html">
+          <!--add contact link-->
+          <div class="belowBox mb-5">
             <h4>Make Your Appoinment</h4>
 
 
@@ -186,15 +398,27 @@
       </div>
 
 
-
     </div>
 
   </div>
   <!--end personal touch-->
 
 
-  <!--start footer-->
+  <!--Dylan 
+
+    <div class="embed">
+      <h2><b>What's new!</b></h2>
+      <div class="as">
+        <a class="twitter-timeline" data-theme="light" href="https://twitter.com/SommelierStyle?ref_src=twsrc%5Etfw">Tweets by SommelierStyle</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
   
+  embed-->
+
+  
+  <!--second extra footer -->
+
+  <!--start extra footer-->
+
   <footer>
 
     <div class="container personalBox">
@@ -202,11 +426,13 @@
 
         <!--leftside more detail-->
 
-        <div class="col-lg-4 py-5 text-center moreDetail">
-          <!--class moreDetail control the whole box of left side-->
-          <img src="asset/image/tuxedoLogo.png">
-          <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis nulla dolorum, consectetur
-            itaque recusandae asperiores earum soluta accusamus voluptates?</p>
+        <div class="col-lg-4 py-5 text-justify text-center extraFooter">
+          <!--class extrafooter control the whole box of left side-->
+          <div class="">
+            <img src="asset/image/LogoWOut.png" class="img-fluid">
+          </div>
+          <p class="mt-3 text-justify">The Sommelier of Style offers a wide variety of tuxedos and suits for Proms,
+            Weddings, Special Occasions. </p>
 
         </div>
 
@@ -214,11 +440,17 @@
         <div class="col-lg-4 py-5 text-center ">
           <!--py padding top and bottom-->
           <div class="keepInTouch">
-            <h4>Keep in Touch</h4>
+            <h4>Like Us</h4>
             <div class="social">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-pinterest"></i>
+              <a href="https://www.facebook.com/sommelierofstyle" target="_blank"><i
+                  class="fa-brands fa-facebook"></i></a>
+
+              <!--<a href="https://www.facebook.com/sommelierofstyle" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              ///target="_blank" for open pop up another page but can not comeback same page-->
+
+              <a href="https://instagram.com/sommelierofstyle?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/SommelierStyle" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
 
             </div>
 
@@ -251,9 +483,12 @@
     </div>
 
   </footer>
- 
+
+
+
+
   <div class="copyright text-center pb-2">
-    <small>&copy;copyright Tiparpron & collborated by group 3</small>
+    <small>&copy;copyright TiparpronS. & collborated by group 3</small>
   </div>
 
   <script src="https://kit.fontawesome.com/42d8882816.js" crossorigin="anonymous"></script>

@@ -8,8 +8,9 @@
 }
 body,
 html {
-    overflow-x: hidden;
+overflow-x: ;
 }
+
 :root {
   --darkblue: #154360;
   --darkGreenMixBlue: #117a65;
@@ -18,12 +19,12 @@ a {
   text-decoration: none; /*so no line one */
 }
 
-
 /*logo size--control logo*/
 .navbar-brand {
-  width: 100px;
-  height: 100px;
+  width: 230px;
+  height: 70px;
   margin-left: 20px;
+  margin-top: -10px;
 }
 .navbar-brand img {
   width: 100%;
@@ -39,32 +40,50 @@ a {
 /*nav link target only each link*/
 .nav-link {
   color: var(--darkblue);
-  margin-left: -60px;
-  margin-right: 80px;
+  margin-left: -150px;
+  margin-right: 160px;
   font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+
 }
 
 /*make hover on a tag*/
 .nav-link:hover {
-  color: var(--darkGreenMixBlue);
+ color:#ee6c4d;
+  text-decoration: none;
 }
-/*below navbar bet nav and big hero*/
+
+#hover{
+  color:#ee6c4d;
+}
+
+/*below navbar bet nav and big hero---control navy blue bar*/
 .belowNav {
   width: 100%;
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: var(--darkblue);
   color: white;
 }
 
-.lineUp {
-  width: 1px;
-  background-color: white;
-  height: 30px;
-  margin: 0px 20px;
+.belowNav p{
+margin-top: 10px;
+  font-size: 18px;
+color: white;
+
+}
+
+/*about page --target change size of p About me*/
+.ChangeSizeAbout{
+font-size: 28px!important;
+
+
 }
 
 /*bighero use for set height*/
@@ -120,7 +139,7 @@ a {
 .bigBox {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;/*make it responsive*/
+  flex-wrap: wrap; /*make it responsive*/
   height: auto;
   margin-top: 50px;
   border-top: 1px solid lightgray;
@@ -132,7 +151,7 @@ a {
   height: 300px;
   width: 50%;
   padding: 30px 50px 0px 50px;
-  text-align: center;
+  text-align: ;
 }
 .rightSidePics {
   height: 300px;
@@ -151,29 +170,32 @@ a {
   height: 400px;
   width: 300px;
   object-fit: cover;
+  border-radius: 20px;
 }
 .topbox {
   height: auto; /* height auto help to respinsive*/
   width: 80%; /* do not put 650px make proble in responsive--use % insted*/
   border: 2px solid var(--darkblue);
-  text-align: center;
+
   padding: 20px;
   margin: 50px auto; /*left and right put auto it will perfect center*/
+  border-radius: 20px;
 }
 /*make appoinment box*/
 .belowBox {
   height: auto; /* height auto help to respinsive*/
   width: 50%; /* do not put 650px make proble in responsive--use % insted*/
-  border: 2px solid var(--darkblue);
+
   text-align: center;
   padding: 20px;
   margin: auto;
   color: white;
   background-color: var(--darkblue);
+  border-radius: 20px;
 }
 /*add hover to make appoinment */
 .belowBox:hover {
-  background-color:  #1167b1;
+ background-color:#ee6c4d;
 }
 
 /*footer*/
@@ -192,12 +214,11 @@ a {
   margin: 20px 10px;
 }
 
-/* left side footer more detail--target logo*/
-.moreDetail img {
-  width: 150px;
-}
-.moreDetail {
-  padding-left: 50px;
+/* left side footer more detail--target footer -logo*/
+
+/* box aroung logo*/
+.boxLogo{
+background-color: white;
 }
 
 /*target icon phone and email*/
@@ -208,6 +229,19 @@ a {
 }
 
 /*product pages*/
+
+.card{
+
+border-radius: 20px;
+
+border: 1px solid lightgrey;
+
+}
+
+.card img{
+
+  border-radius: 20px;
+}
 
 .bigHero-product {
   background-image: url('../image/productPageBighero.jpg');
@@ -230,52 +264,146 @@ footer {
 footer p {
   color: white;
 }
+
+/*contact-page*/
+
+.bigHero-contact {
+  background-image: url('https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3VpdHxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60');
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*control instagram*/
+.insta-control {
+width: 100%;
+height: 250px!important ;
+}
+/*twitter*/
+.twitter-timeline{
+height: 250px !important;
+width: 100%;
+
+
+}
+
+/*control social media box*/
+.moreDetail {
+  height: 300px;
+overflow: scroll;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  background-color:white;
+  padding: 20px;
+  margin: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;/*parent*/
+ padding-top: 80px;
+
+}
+.moreDetail i{
+position: absolute;/*social media icon be on top*/
+top: 0;
+left: 0;
+
+padding-bottom: 50px;
+
+}
+
+.facebookColor{
+color: #4267B2!important;
+}
+
+.twitterColor{
+color: #1DA1F2!important;
+}
+
+.instagramColor{
+color: #F56040!important;
+}
+
+/*target social media at the footer only--change all color icon to white color */
+
+
+.fa-brands{
+  color: white;
+}
+
+
+/*change color what people are saying testimonial-contactpage*/
+
+.ChangeColorH{
+  color: var(--darkblue);
+}
+
+/*change color keep in touch on index page*/
+
+.changeColor{
+  color: var(--darkblue);
+  font-weight: bolder;
+}
+
+/*logo at the footer change size*/
+.extraFooter img{
+  width: 70%;
+  display: block;
+  margin: auto;
+
+  
+}
+.extraFooter p{
+  text-align: left;
+}
+
+
 /*media queries ipad air*/
 
-@media screen and (max-width:850px) {
-    .bighero {
-        height: 40vh;
-       
-      }
-      .nav-link {
-  
-        margin-left: 30px;
-        margin-right: 0px;
-       
-      }
-      
-      .fixSizeImg img {
-      display: block;
-      margin: auto;
-      margin-bottom: -60px;
-      }
+@media screen and (max-width: 850px) {
+  .bighero {
+    height: 40vh;
+  }
+  .nav-link {
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+
+  .fixSizeImg img {
+    display: block;
+    margin: auto;
+    margin-bottom: -60px;
+  }
+
+  .sizeBox4Phone{
+
+padding: 50px 200px;
+
+ }
 
 }
 /*media queries phone*/
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   /* we   remove below nav section the whole thing for phone size*/
   .belowNav {
-
     display: none;
-    
   }
-  
-  .removePicFromPhone{
-    display: none;/*we hide two pictures in big hero*/
+
+  .removePicFromPhone {
+    display: none; /*we hide two pictures in big hero*/
   }
   .bighero {
     height: 50vh;
-   
   }
 
   .bigBox {
-
     align-items: center;
     height: auto;
- 
+
     justify-content: center;
-    flex-direction: column;/*change 2 boes side vby side to up and down box*/
+    flex-direction: column; /*change 2 boes side vby side to up and down box*/
   }
   .leftsideText {
     height: 300px;
@@ -287,7 +415,6 @@ footer p {
     height: 300px;
     width: 100%;
     margin-top: -30px;
-    
   }
   .rightSidePics img {
     height: 100%;
@@ -297,5 +424,21 @@ footer p {
     border-radius: 20px;
     object-fit: cover;
   }
+/*contact page - big hero*/
+  .bigHero-contact {
+    height: 50vh; 
+  }
+/*change size of individual box--socialmedia--footer*/
+  .sizeBox4Phone{
 
+    padding:30px;
+    
+     }
+
+/*make more space left and right on p tag logo section at the footer*/
+
+.extraFooter p{
+  margin: 0px 15px;
+}
+  
 }
