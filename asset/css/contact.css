@@ -105,15 +105,54 @@ background-color: #f1dac4;
 .fa-quote-right{
   font-size: 30px!important;
 }
-/*contact form*/
 
+
+
+
+/*contact form*/
+/*control big box*/
 .mainBox-contact{
 width: 50%;
 border: 2px lightgray solid;
-
-
-
+display: flex;
+align-items: center;
+margin: 30px auto 0px auto;/* top right bottom left*/
+padding: 20px 0px;
+border: 1px solid grey;
+border-radius: 10px;
+background-image:url("../image/bowGrey.png");
+background-size: cover;
 }
+/*control small box*/
+.controlForm input{
+  margin: 10px 10px;
+  padding: 5px 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+/*text area message box*/
+.controlForm textarea{
+ width: 95%;
+margin: 10px;
+ display: block;
+ padding: 10px 10px 100px 10px;
+ border: 1px solid grey;
+ border-radius: 10px;
+}
+
+/*submit box*/
+
+#controlSubmitBox{
+width: 50%;
+margin: auto;
+border:2px solid #ee6c4d;
+}
+
+
+#controlSubmitBox:hover{
+background-color:#ee6c4d ;
+}
+
 
 .controlForm{
   display: flex;
