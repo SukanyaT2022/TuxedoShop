@@ -73,10 +73,20 @@
 and use onsubmit insted of onclick-->
 <form action="" class="controlForm" name="myFormJvScript" onsubmit="return submitWholeForm()" method="get">
   <div class="Name">
+
+    <label for="email" class="requireText">* Required</label><br>
+
  <input type="text" placeholder="First Name" name="Fname">
+ <span class="formError"></span>
+
+ <!--we use span becasue it in line element 
+  if we use div it will move to another line-->
   <input type="text" placeholder="Last Name" name="Lname" >
 </div>
-<input type="email" placeholder=" Your Email Address">
+
+<label for="email" class="requireText">* Required</label>
+<input type="email" placeholder=" Your Email Address" required><!-- require is user must fill this -if not it will not submit
+  / it will auto check for @ .com-->
 <input type="text" placeholder="Subject">
 <textarea placeholder="Leave a Message" id="textBox"></textarea>
  
